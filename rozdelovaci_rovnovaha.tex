@@ -1,0 +1,69 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=2.00cm, right=2.00cm, top=2.00cm, bottom=2.00cm]{geometry}
+\usepackage[czech]{babel}
+\usepackage{upgreek}
+
+\def\ri#1{\mathrm{#1}}
+\def\jd#1{\ifmmode\,\mathrm{#1}\else\,\textrm{#1}\fi}
+
+\begin{document}
+\begin{center}
+\includegraphics*[width=\linewidth]{rozdel}
+\end{center}
+\section*{Princip úlohy}
+Rozdělovací poměr, $P$, ve dvou nemísitelných rozpouštědlech je definován jako poměr analytických koncentrací rozpuštěné látky v jednotlivých rozpouštědlech. Pro systém toluen--voda--kyselina benzoová je rozdělovací poměr, $P$, definován jako
+\begin{equation}
+	P = \dfrac{c_\ri{t}}{c_\ri{v}},
+\end{equation}
+kde $c_\ri{t}$ je koncentrace kyseliny benzoové v toluenu a $c_\ri{v}$ je koncentrace kyseliny benzoové ve vodě. Koncentraci kyseliny benzoové ve vodě lze stanovit titrací kyseliny benzoové hydroxidem sodným. Hydroxid sodný reaguje s kyselinou benzoovou ve stechiometrickém poměru 1:1 podle rovnice
+\begin{equation}
+	\ri{C_6H_5COOH + NaOH}\rightarrow \ri{C_6H_5COONa + H_2O}.
+\end{equation}
+Ze zjištěné koncentrace kyseliny benzoové ve vodě můžeme přes látková množství spočítat koncentraci kyseliny benzoové v toluenu. Rozdělovací poměr, $P$, závisí na celkovém látkovém množství kyseliny benzoové v systému a není tak konstantní.\\
+Rozdělovací rovnováha je charakterizovaná Nernstovým rozdělovacím koeficientem $k_\ri{r}$ jako poměr aktivit rozpuštěné látky v obou rozpouštědlech. V případě velmi zředěných roztoků lze tyto aktivity ztotožnit s molárními koncentracemi rozpuštěné látky v obou rozpouštědlech jako 
+\begin{equation}
+	k_\ri{r} = \dfrac{a_\ri{A, 1}}{a_\ri{A, 2}} = \approx \dfrac{c_\ri{A, 1}}{c_\ri{A, 2}}, 
+\end{equation}
+kde $a_\ri{A, 1}$ a $a_\ri{A, 2}$ jsou aktivity rozpuštěné látky A v rozpouštědlech 1 a 2 a $c_\ri{A, 1}$ a $c_\ri{A, 2}$ jsou koncentrace rozpuštěné látky A v rozpouštědlech 1 a 2. Tato rovnováha však platí pouze v případě, že se rozpuštěná látka nachází v systému pouze v jedné formě. Protože kyselina benzoová v toluenové fázi dimeruje, je rozdělovací koeficient definován jako poměr koncentrací monomeru v toluenové a vodné fázi. Disociaci kyseliny benzoové ve vodné fázi můžeme zanedbat a pro Nernstův rozdělovací koeficient dostáváme vztah
+\begin{equation}
+	k_\ri{r} = \dfrac{c_\ri{m, t}}{c_\ri{v}},
+\end{equation}
+kde $c_\ri{m, t}$ je koncentrace kyseliny benzoové v toluenu, kterou vyjádříme pomocí konstanty dimerizace jako 
+\begin{equation}
+	c_\ri{m, t} = \sqrt{\dfrac{c_\ri{d, t}}{K_\ri{D}}},
+\end{equation}
+kde $c_\ri{d, t}$ je koncentrace dimeru v toluenu a $K_\ri{D}$ je konstanta dimerizace kyseliny benzoové v toluenu. Analytická koncentrace kyseliny benzoové v toluenu je daná jako součet koncentrace monomeru a dvojnásobku koncentrace dimeru, protože jeden dimer je tvořen dvěma molekulami kyseliny benzoové. Pro analytickou koncentraci kyseliny benzoové v toluenu, $c_\ri{t}$, tedy platí
+\begin{equation}
+	c_\ri{t} = c_\ri{m, t} + 2\,c_\ri{d, t}.
+\end{equation}
+Vyjádřením $c_\ri{d, t}$ z rovnice (6) a jeho dosazením do rovnice (5) získáme vztah
+\begin{equation}
+	c_\ri{m, t} = \sqrt{\dfrac{c_\ri{t}-c_\ri{m, t}}{2\,K_\ri{D}}}.
+\end{equation}
+Protože v toluenu téměř všechna kyselina benzoová dimeruje můžeme v rovnici (7) $c_\ri{m, t}$ oproti $c_\ri{t}$ zanedbat a dosazením do rovnice (4) získáme vztah
+\begin{equation}
+	k_\ri{r} = \dfrac{\sqrt{\dfrac{c_\ri{t}}{2\,K_\ri{D}}}}{c_\ri{v}},
+\end{equation}
+ze kterého vyjádříme vztah
+\begin{equation}
+	k_\ri{r}\sqrt{2\,K_\ri{D}} =  \dfrac{\sqrt{c_\ri{t}}}{c_\ri{v}}.
+\end{equation}
+Protože $k_\ri{r}$ a $K_\ri{D}$ jsou konstanty, je i poměr $\dfrac{\sqrt{c_\ri{t}}}{c_\ri{v}}$ konstantní pro všechny měřené vzorky.\\
+Stupeň disociace $\alpha$ pro kyselinu benzoovou ve vodě spočítáme podle vztahu
+\begin{equation}
+	\alpha = \sqrt{\dfrac{10^{-\ri{p}K_\ri{A}}}{c_\ri{v, rel}}},
+\end{equation}
+kde p$K_\ri{A}$ je logaritmický tvar disociační konstanty kyseliny benzoové, podle návodu k úloze roven 4,2 a $c_\ri{v, rel}$ je relativní koncentrace kyseliny benzoové ve vodě. Tuto relativní koncentraci získáme podělením koncentrace kyseliny benzoové ve vodě, $c_\ri{v}$, standardní molární koncentrací $c^\ominus = 1\jd{mol\cdot dm^{-3}}.$
+\section*{Postup}
+Nejprve byla do 4 Erlenmayerových baněk odvážena kyselina benzoová. Přesné navážky jsou uvedeny v tabulce č. 1. Do každé baňky bylo napipetováno 25,0\jd{ml} vody a 10,0\jd{ml} toluenu. Baňky byly uzavřeny a upevněny do automatické třepačky, na které byly třepány při frekvenci $500\jd{min^{-1}}$ po dobu 30\jd{min}. Poté byl obsah každé baňky přelit do dělicí nálevky a bylo počkáno cca 40\jd{min}, než se hladina mezi fázemi ustálila. Poté byla z každého vzorku do uzavíratelné lahvičky odpuštěna vodná fáze.
+\section*{Vyhodnocení výsledků}	
+\section*{Diskuse}
+\section*{Závěr}
+\section*{Zdroje}
+[1] J. Vohlídal, A. Julák, K. Štulík: Chemické a analytické tabulky, Praha 1999
+\end{document}
