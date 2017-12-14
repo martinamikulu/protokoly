@@ -1,0 +1,182 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=2.00cm, right=2.00cm, top=2.00cm, bottom=2.00cm]{geometry}
+\usepackage[czech]{babel}
+\usepackage{upgreek}
+
+\def\ri#1{\mathrm{#1}}
+\def\jd#1{\ifmmode\,\mathrm{#1}\else\,\textrm{#1}\fi}
+
+\begin{document}
+\begin{center}
+\includegraphics*[width=\linewidth]{V_zahlavi}
+\end{center}
+\section*{Princip úlohy}
+Viskozitní koeficient $\eta$ je definován Poisseuillovou rovnicí jako
+\begin{equation}
+	\eta = \dfrac{\pi\cdot r^4 \cdot \Delta p}{8\cdot V\cdot l}\cdot t,
+\end{equation}
+kde $\pi$ je konstanta, $r$ je poloměr kapiláry viskozimetru, $l$ je délka kapiláry viskozimetru, $\Delta p$ je rozdíl tlaků na hladině kapaliny a u ústí kapiláry, $t$ je čas, za který kapalina o objemu $V$ proteče kapilárou. Pro viskozitní koeficient směsi dvou neomezeně mísitelných kapalin pak platí
+\begin{equation}
+	\eta = (\eta_1^*\cdot x_1 + \eta_2^*\cdot x_2)\cdot \left[1-\dfrac{2\cdot x_1\cdot x_2 \cdot \Delta u^0}{k\cdot T}\right],
+\end{equation}
+kde $\eta_1^*$ a $\eta_2^*$ jsou viskozitní koeficienty čistých kapalin 1 a 2, $x_1$ a $x_2$ molární zlomky kapalin ve směsi, $k$ he Boltznmannova konstanta a $T$ je termodynamická teplota. Veličina $\Delta u^0$ je tzv. výměnná energie, která popisuje mezimolekulové interakce ve směsi.\\
+Při stanovení viskozitního koeficientu vzorku kapaliny je třeba nejprve stanovit konstantu viskozimetru $C$ vyjádřenou jako
+\begin{equation}
+	C = \dfrac{\eta}{\rho \cdot t},
+\end{equation}
+kde $\rho$ je hustota měřené kapaliny. Rovnice (3) vychází z rovnice (1) tak, že za objem měřené kapaliny $V$ dosadíme podíl její hmotnosti $m$ a hustoty $\rho$, tedy  $\frac{m}{\rho}$ a získáme tak rovnici
+\begin{equation}
+	\eta = \dfrac{\pi\cdot r^4 \cdot \Delta p}{8\cdot m\cdot l}\cdot \rho \cdot t,
+\end{equation} Konstantu viskozimetru stanovíme tak, že změříme čas, po který kapilárou poteče kalibrační kapalina o známé hustotě a viskozitním koeficientu, v našem případě voda. Z takto získaného času spočítáme konstantu viskozimetru, pomocí které pak spočítáme viskozitní koeficient měřené kapaliny o známé hustotě. 
+\section*{Postup}
+Nejprve byl zapnut termostat a bylo zkontrolováno, že je jeho teplota nastavena na $20\jd{^\circ C}$. Poté byl do vodní lázně umístěn Ubbelohdeův viskozimetr, který byl plnicím ramenem naplněn vodou tak, že hladina vody v zásobní baňce byla mezi dvěma ryskami. Viskozimetr byl ponechán v lázni a mezitím byly připraveny vzorky. Do tří 50ml odměrných baněk bylo napipetováno postupně 10,0\jd{ml}, 26,0\jd{ml} a 42,0\jd{ml} acetonu. Z naplněné 50ml byrety byly roztoky doplněny po rysku vodou a byl odečten přesný objem přidané vody. Tyto hodnoty jsou uvedeny v tabulce č. 1. 
+\begin{center}
+		\noindent Tab. č. 1: Objemy acetonu a vody při přípravě a celkový objem vzorků\\
+		\begin{tabular}{c|c|c|c}
+			Vzorek & $V_\ri{aceton}$/ml & $V_\ri{voda}$/ml & $V_\ri{celk}$/ml \\
+			\hline
+			1 & 10,0 & 40,9 & 50,0\\
+			2 & 26,0 & 25,6 & 50,0\\
+			3 & 42,0 & 9,0 & 50,0\\
+		\end{tabular}\\
+\end{center}
+Následně byla voda ve viskozimetru pomocí balonku natažena do ramene s kapilárou tak, že hladina byla kousek nad horní ryskou měrné baňky. V okamžiku, kdy byl dolní meniskus hladiny přesně na horní rysce, byly spuštěny stopky a byl měřen čas až do okamžiku, kdy dolní meniskus hladiny klesl na dolní rysku měrné baňky. Toto měření bylo provedeno desetkrát Takto naměřené časy pro vodu jsou v tabulce č. 2. Poté bylo totožné měření provedeno s každým ze tří vzorků pětkrát. Časy naměřené pro vzorky jsou v tabulce č. 3. Následně byla data vyhodnocena.
+\section*{Vyhodnocení výsledků}
+\begin{center}
+	\noindent Tab. č. 2: Hodnoty naměřené pro vodu\\
+	\begin{tabular}{c|c}
+		Č. měření & $t$/s\\
+		\hline
+		1 & 102,5\\
+		2 & 102,2\\
+		3 & 102,3\\
+		4 & 102,4\\
+		5 & 102,3\\
+		6 & 101,2\\
+		7 & 102,4\\
+		8 & 102,6\\
+		9 & 102,3\\
+		10 & 102,0\\
+	\end{tabular}\\
+	\vspace*{10pt}
+	\noindent Tab. č. 3: Hodnoty naměřené pro jednotlivé vzorky.\\
+	\begin{tabular}{c|c|c|c}
+		Č. měření & $t_1$/s & $t_2$/s & $t_3$/s\\
+		\hline
+		1 & 143,5 & 165,1 & 84,8\\
+		2 & 143,6 & 164,7 & 84,7\\
+		3 & 143,4 & 165,0 & 85,0\\
+		4 & 143,4 & 165,6 & 84,6\\
+		5 & 143,5 & 165,1 & 84,9\\
+	\end{tabular}
+\end{center}
+\newpage
+\noindent Nejprve byl spočítán molární zlomek acetonu $x_\ri{aceton}$ podle rovnice
+\begin{equation}
+	x_\ri{aceton} = \dfrac{\dfrac{\rho_\ri{aceton} \cdot V_\ri{aceton}}{M_\ri{aceton}}}{\dfrac{\rho_\ri{aceton} \cdot V_\ri{aceton}}{M_\ri{aceton}}+\dfrac{\rho_\ri{voda} \cdot V_\ri{voda}}{M_\ri{voda}}},
+\end{equation}
+kde $\rho_\ri{aceton}$ je hustota acetonu při $20\jd{^\circ C}$, podle [1] rovna $789,98\jd{g\cdot dm^\ri{-3}}$,  $V_\ri{aceton}$ je pipetovaný objem acetonu, $M_\ri{aceton}$ je molární hmotnost acetonu, podle [1] rovna $58,08\jd{g\cdot mol^\ri{-1}}$, $\rho_\ri{voda}$ je hustota vody při $20\jd{^\circ C}$, podle [1] rovna $998,21\jd{g\cdot dm^\ri{-3}}$, $V_\ri{voda}$ je pipetovaný objem vody a $M_\ri{voda}$ je molární hmotnost vody, podle [1] rovna $18,00\jd{g\cdot mol^\ri{-1}}$. Po dosazení získáme pro vzorek č. 1 výpočet
+$$x_\ri{aceton, 1} = \dfrac{\dfrac{789,98 \cdot 0,0100}{58,08}}{\dfrac{789,98 \cdot 0,0100}{58,08}+\dfrac{998,21 \cdot 0,0409}{18,00}} = 0,0570.$$
+Následně byl spočítán molární zlomek vody $x_\ri{voda}$ jako
+\begin{equation}
+x_\ri{voda} = 1-x_\ri{aceton}.
+\end{equation}
+Dosazením získáme
+$$x_\ri{voda,1} = 1-0,0570 = 0,943.$$
+Následně byla spočítána hustota jednotlivých vzorků podle rovnice
+\begin{equation}
+	\rho_\ri{vzorek} = \dfrac{\rho_\ri{aceton} \cdot V_\ri{aceton} + \rho_\ri{voda} \cdot V_\ri{voda}}{V_\ri{celk}},
+\end{equation}
+kde $V_\ri{celk}$ je celkový objem vzorku. Po dosazení získáme pro vzorek č. 1
+$$\rho_\ri{1} = \dfrac{789,98 \cdot 0,0100 + 998,21 \cdot 0,0409}{0,0500} = 0,975\jd{g\cdot cm^\ri{-3}}.$$
+\begin{center}
+	\noindent Tab. č. 4: Molární zlomky a hustoty jednotlivých vzorků\\
+	\begin{tabular}{c|c|c|c}
+		Vzorek & $x_\ri{aceton}$/\% & $x_\ri{voda}$/\% & $\rho/\jd{g\cdot cm^\ri{-3}}$ \\
+		\hline
+		1 & 5,70 & 94,3 & 0,975\\
+		2 & 19,9 & 80,1 & 0,922\\
+		3 & 53,4 & 46,6 & 0,843\\
+	\end{tabular}\\
+\end{center}
+Poté byla spočítána průměrná průtoková doba vody $\bar{t_\ri{v}}$ jako aritmetický průměr hodnot naměřených pro vodu. Směrodatná odchylka měření $(\sigma_\ri{n-1})_{t_\ri{v}}$ byla spočítána v programu Excel pomocí funkce SMODCH.VYBER a směrodatná odchylka průměru $(\sigma_\ri{n-1})_{\bar{t_\ri{v}}}$ podle vzorce
+\begin{equation}
+	(\sigma_\ri{n-1})_{\bar{t_\ri{v}}} = \dfrac{(\sigma_\ri{n-1})_{t_\ri{v}}}{\sqrt{n}}
+\end{equation}
+$$(\sigma_\ri{n-1})_{\bar{t_\ri{v}}} = \dfrac{0,4}{\sqrt{10}}=0,12$$
+\begin{center}
+	\noindent Tabulka č. 5: Statistické vyhodnocení průměrné průtokové doby vody
+	\begin{tabular}{c|c|c}
+		$\bar{t_\ri{v}}$/s & $(\sigma_\ri{n-1})_{t_\ri{v}}$/s & $(\sigma_\ri{n-1})_{\bar{t_\ri{v}}}$/s\\
+		\hline
+		102,2 & 0,4 & 0,12 \\
+	\end{tabular}\\
+\end{center}
+Následně byla rovnice (3) upravena do tvaru odpovídajícímu měření vody jako
+\begin{equation}
+C = \dfrac{\eta_\ri{voda}}{\rho_\ri{voda} \cdot \bar{t_\ri{v}}},
+\end{equation}
+kde $\eta_\ri{voda}$ je viskozitní koeficient čisté vody, podle [1] roven $1,0019\jd{Pa\cdot s}$. Po dosazení byla spočítána konstanta viskozimetru jako
+$$C = \dfrac{1,0019}{998,21 \cdot 102,2} = 9,819\cdot 10^{-3}\jd{Pa\cdot dm^3 \cdot g^{-1}}$$.
+Směrodatná odchylka konstanty $(\sigma_\ri{n-1})_C$ byla spočítána jako
+\begin{equation}
+	(\sigma_\ri{n-1})_C = \dfrac{\eta_\ri{voda}\cdot (\sigma_\ri{n-1})_{\bar{t_\ri{v}}}}{\rho_\ri{voda} \cdot \bar{t_\ri{v}}^2}.
+\end{equation}
+Po dosazení získáme výpočet
+$$(\sigma_\ri{n-1})_C = \dfrac{1,0019\cdot 0,12}{998,21 \cdot 102,2^2} = 4\cdot 10^{-8}\jd{Pa\cdot dm^3\cdot g^{-1}}$$.
+Následně byla spočítána průměrná průtoková doba vzorků $\bar{t_\ri{vz}}$ a stejným způsobem jako v případě vody směrodatná odchylka měření $(\sigma_\ri{n-1})_{t_\ri{vz}}$ a směrodatná odchylka průměru $(\sigma_\ri{n-1})_{\bar{t}_\ri{vz}}$ podle rovnice (8). \\
+\begin{center}
+	\noindent Tabulka č. 6: Průměrné doby průtoku vzorků a jejich statistické vyhodnocení\\
+	\begin{tabular}{c|c|c|c}
+		Vzorek & $\bar{t}_\ri{vz}$/s & $(\sigma_\ri{n-1})_{t_\ri{vz}}$/s & $(\sigma_\ri{n-1})_{\bar{t}_\ri{vz}}$/s\\
+		\hline
+		1 & 143,5 & 0,08 & 0,03\\
+		2 & 165,1 & 0,3 & 0,10\\
+		3 & 0,16 & 0,05\\
+	\end{tabular}\\
+\end{center}
+Viskozitní koeficient vzorku byl spočítán úpravou rovnice (3) jako
+\begin{equation}
+\eta_\ri{vz} = C\cdot \rho_\ri{vz}\cdot \bar{t}_\ri{vz}.
+\end{equation}
+Pro vzorek č. 1 získáme po dosazení výpočet
+$$\eta_\ri{vz} = 9,819\cdot 10^{-3}\cdot 0,975 \cdot 143,5 = 1,37\jd{Pa\cdot s}$$.
+Pro viskozitní koeficienty vzorků byla spočítána směrodatná odchylka podle vzorce
+\begin{equation}
+	(\sigma_\ri{n-1})_{\eta_\ri{vz}} = \eta_\ri{vz} \cdot \sqrt{\left[\dfrac{(\sigma_\ri{n-1})_C}{C}\right]^2 + \left[\dfrac{(\sigma_\ri{n-1})_{\bar{t}_\ri{vz}}}{\bar{t}_\ri{vz}}\right]^2}
+\end{equation}
+a 95\% interval spolehlivosti výsledku $I_\ri{0,95}$ podle vzorce
+\begin{equation}
+	I_\ri{0,95, vz} = 2,1\cdot (\sigma_\ri{n-1})_{\eta_\ri{vz}}.
+\end{equation}
+Pro vzorek č. 1 po dosazení dostaneme výpočty
+$$(\sigma_\ri{n-1})_{\eta_\ri{vz}} = 1,37 \cdot \sqrt{\left[\dfrac{4\cdot 10^{-8}}{9,819\cdot 10^{-3}}\right]^2 + \left[\dfrac{0,03}{143,5}\right]^2} = 0,0008$$
+a 
+$$I_\ri{0,95, 1} = 2,1\cdot 0,0008 = 0,0017$$
+\begin{center}
+	\noindent Tabulka č. 7: Viskozitní koeficienty jednotlivých vzorků a jejich statistické vyhodnocení\\
+	\begin{tabular}{c|c|c|c}
+		Vzorek & $\eta_\ri{vz}$ & $(\sigma_\ri{n-1})_{\eta_\ri{vz}}$ & $I_\ri{0,95, vz}$\\
+		\hline
+		1 & 1,37 & 0,0008 & 0,0017\\
+		2 & 1,49 & 0,003 & 0,006\\
+		3 & 0,702 & 0,0013 & 0,003\\
+	\end{tabular}
+\end{center}
+\section*{Diskuse}
+Protože odchylky naměřených časů jsou velmi malé, přesnost určení viskozitních koeficientů je relativně vysoká. \\
+Protože má čistý aceton nižší viskozitní koeficient než voda, očekávali jsme pokles časů při měření vzorků oproti měření vodě. Toto se však potvrdilo až při velkém nadbytku acetonu ve směsi při měření č. 3. Tato skutečnost vypovídá o neideálním chování směsi acetonu a vody a o nenulové výměnné energii $\Delta u^0$.
+\section*{Závěr}
+Konstanta viskozimetru je při teplotě $20\jd{^\circ C}$ rovna $9,819\cdot 10^{-3}\jd{Pa\cdot dm^3 \cdot g^{-1}}$.\\
+Viskozitní koeficienty jednotlivých vzorků jsou:
+$$\eta_\ri{1} = 1,37\pm0,0017\jd{Pa\cdot s}$$
+$$\eta_\ri{2} = 1,49\pm0,006\jd{Pa\cdot s}$$
+$$\eta_\ri{3} = 0,702\pm0,003\jd{Pa\cdot s}$$
+\section*{Zdroje}
+[1] J. Vohlídal, A. Julák, K. Štulík: Chemické a analytické tabulky, Praha 1999
+\end{document}
